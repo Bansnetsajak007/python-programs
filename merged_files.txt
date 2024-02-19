@@ -1,0 +1,97 @@
+# Content of file: first.py
+
+def calculate_installments():
+    purchase_amount = float(input("Enter the amount of purchase: $"))
+    num_installments = int(input("Enter the desired number of payment instalments: "))
+
+
+    total_purchase_amount = purchase_amount * 1.05
+
+ 
+    installment_cost = total_purchase_amount / num_installments
+
+    print("\nTotal Purchase Amount: ${:.2f}".format(total_purchase_amount))
+    print("Each Instalment Cost: ${:.2f}".format(installment_cost))
+
+
+
+calculate_installments()
+
+
+# Content of file: second.py
+
+def calculate_mpg():
+
+    miles_driven = float(input("Enter the number of miles driven: "))
+    gallons_used = float(input("Enter the gallons of gas used: "))
+
+    mpg = miles_driven / gallons_used
+
+    print("\nYour car's MPG is: {:.2f} miles per gallon".format(mpg))
+
+calculate_mpg()
+
+
+# Content of file: third.py
+
+def calculate_total_amount():
+    food_charge = float(input("Enter the charge for the food: $"))
+
+    tip_percentage = 0.18
+    sales_tax_percentage = 0.07
+
+    tip_amount = food_charge * tip_percentage
+    sales_tax_amount = food_charge * sales_tax_percentage
+
+    total_amount = food_charge + tip_amount + sales_tax_amount
+
+    print("\nFood Charge: ${:.2f}".format(food_charge))
+    print("Tip (18%): ${:.2f}".format(tip_amount))
+    print("Sales Tax (7%): ${:.2f}".format(sales_tax_amount))
+    print("Total Amount: ${:.2f}".format(total_amount))
+
+
+calculate_total_amount()
+
+
+# Content of file: fourth.py
+
+import math
+
+def main():
+    radius = float(input("Enter the radius of the circle: "))
+
+    area = math.pi * (radius ** 2) / 2
+    circumference = 2 * math.pi * radius
+
+    print(f"Area of the circle: {area}")
+    print(f"Circumference of the circle: {circumference}")
+
+
+main()
+
+
+# Content of file: fifth.py
+
+def ingredient_adjuster():
+    # Original recipe
+    sugar_original = 1.5  
+    butter_original = 1  
+    flour_original = 2.75 
+
+    num_cookies = int(input("Enter the number of cookies you want to bake: "))
+
+    # Calculate adjusted amounts
+    sugar_adjusted = sugar_original * (num_cookies / 48)
+    butter_adjusted = butter_original * (num_cookies / 48)
+    flour_adjusted = flour_original * (num_cookies / 48)
+
+    print(f"\nAdjusted amounts for {num_cookies} cookies:")
+    print(f"Sugar: {sugar_adjusted:.2f} cups")
+    print(f"Butter: {butter_adjusted:.2f} cups")
+    print(f"Flour: {flour_adjusted:.2f} cups")
+
+if __name__ == "__main__":
+    ingredient_adjuster()
+
+
